@@ -1,0 +1,61 @@
+﻿<Window x:Class="EscolaApp.Views.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login - Escola ERP"
+        Height="360"
+        Width="420"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#F2F3F7"
+        KeyDown="Window_KeyDown">
+
+    <Grid Margin="0,0,0,-79">
+        <!-- CARD CENTRAL -->
+        <Border Width="240"
+                Padding="25"
+                Background="White"
+                CornerRadius="12"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left" Margin="77,17,0,0" Height="311">
+
+            <StackPanel>
+
+                <!-- ÍCONE -->
+                <TextBlock Text="🔐"
+                           FontSize="30"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,5" Height="40" Width="40"/>
+
+                <TextBlock Text="Acesso ao Sistema"
+                           FontSize="18"
+                           FontWeight="SemiBold"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,20"/>
+
+                <!-- USUÁRIO -->
+                <TextBlock Text="Usuário"/>
+                <TextBox x:Name="txtUsuario"
+                         Height="25"
+                         Margin="0,5,0,15"/>
+
+                <!-- SENHA -->
+                <TextBlock Text="Senha"/>
+                <PasswordBox x:Name="txtSenha"
+                             Height="25"
+                             Margin="0,5,0,20"/>
+
+                <!-- BOTÃO -->
+                <Button x:Name="btnEntrar"
+                        Content="Entrar"
+                        Height="24"
+                        FontWeight="SemiBold"
+                        Background="#4F46E5"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Cursor="Hand"
+                        Click="Entrar_Click" Width="190"/>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

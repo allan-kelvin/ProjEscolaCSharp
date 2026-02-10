@@ -1,0 +1,21 @@
+﻿<Window x:Class="EscolaApp.Views.TrocarSenhaView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Trocar Senha"
+        Height="278"
+        Width="330">
+
+    <Grid Margin="15">
+        <StackPanel>
+            <TextBlock Text="Nova Senha"/>
+            <PasswordBox x:Name="txtNovaSenha"/>
+
+            <TextBlock Text="Confirmar Senha" Margin="0,10,0,0"/>
+            <PasswordBox x:Name="txtConfirmar"/>
+
+            <Button Content="Salvar"
+                    Margin="0,15,0,0"
+                    Click="Salvar_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
